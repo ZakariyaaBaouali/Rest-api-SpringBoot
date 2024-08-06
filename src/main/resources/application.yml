@@ -2,6 +2,14 @@
 spring:
   application:
     name: spring-test
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2KB
+      max-file-size: 200MB
+      max-request-size: 215MB
 
 server:
   port: 3000
+
+
